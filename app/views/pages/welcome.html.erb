@@ -1,0 +1,32 @@
+<section class="jumbotron text-center">
+
+<% if current_user %>
+    <h1 class="jumbotron-heading">Welcome <%= current_user.email %></h1>
+<% else %>
+    <h1 class="jumbotron-heading">Welcome</h1>
+<% end %>
+
+
+
+    <div class="container">
+        <br>
+
+        <a>
+            <%= link_to 'View Users', pages_index_path, class:"btn btn-lg btn-success btn-block" %>
+        </a>
+
+        <br>
+        <p class="text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sapiente voluptatibus sed hic commodi repellendus dolorem soluta sint. Maxime ratione voluptatum voluptate nemo vitae minima magni tenetur aliquam illum sint cum rem, accusamus voluptates ea quod molestias enim numquam aut adipisci possimus quia porro necessitatibus. Fugit aliquam culpa exercitationem placeat.</p>
+
+        <% if current_user %>
+        <%= link_to "Sign out", destroy_user_session_path, method: :delete, class:"btn btn-danger btn-lg" %>
+        <% else %>
+            <%= link_to 'Register', new_user_registration_path, class:"btn btn-outline-primary my-2" %>
+            <%= link_to 'Login', new_user_session_path, class:"btn btn-outline-success my-2" %>
+        <% end %>
+
+
+    </div>
+
+</section>

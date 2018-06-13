@@ -1,0 +1,22 @@
+<!-- <h1>Pages#index</h1> -->
+<section class="jumbotron text-center">
+
+    <h1 class="jumbotron-heading">View Users</h1>
+    <%= link_to 'Sign Up', new_user_registration_path, class:"btn btn-primary" %>
+<hr>
+
+<h5 class="jumbotron-heading">
+    <%= @users.count %>
+   <%=  "User".pluralize(@users.count)%>.
+</h5>
+
+    <div class="container">
+        <p class="text-muted">
+            <% @users.each do |user| %>
+                <%= user.email %>
+                <hr>
+            <% end %>
+        </p>
+    </div>
+
+</section>
