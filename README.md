@@ -6,8 +6,7 @@
 
 * Set root_path to 'pages#welcome'
 app/config/routes
-<br>
-<br>
+
 * Added Devise to manage session state & login
 
 * Created User table 
