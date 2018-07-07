@@ -1,17 +1,17 @@
 # Documentation
 
-* Created empty PostGreSQL Database
+* 1) Created empty PostGreSQL Database
 
-* Generated controllers/views, supporting all views and have access to DB
+* 2) Generated controllers/views, supporting all views and have access to DB
 
-* Set root_path to 'pages#welcome'
+* 3) Set root_path to 'pages#welcome'
 app/config/routes
 
-* Added Devise to manage session state & login
+* 4) Added Devise to manage session state & login
 
-* Created User table 
+* 5) Created User table 
 
-* DB migration
+* 6)DB migration
 
 * Generated Views for Devise 
 
