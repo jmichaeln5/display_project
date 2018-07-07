@@ -5,19 +5,15 @@
 * Generated controllers/views, supporting all views and have access to DB
 
 * Set root_path to 'pages#welcome'
-<br>
 app/config/routes
 <br>
 <br>
 * Added Devise to manage session state & login
-<br>
-<br>
+
 * Created User table 
-<br>
-<br>
+
 * DB migration
-<br>
-<br>
+
 * Generated Views for Devise 
 
 * Created additional RegistrationsController to overwrite original Devise functionality to add user's name column to User Table
