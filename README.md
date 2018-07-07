@@ -4,7 +4,7 @@
 
 * 2) Generated controllers/views, supporting all views and have access to DB
 
-3) Set root_path to 'pages#welcome'
+* 3) Set root_path to 'pages#welcome'
 app/config/routes
 
 * 4) Added Devise to manage session state & login
